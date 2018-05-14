@@ -1,5 +1,5 @@
 {
-  "name": "file-loader",
+  "name": "extension-file-loader",
   "version": "1.1.11",
   "description": "A file loader module for webpack",
   "license": "MIT",
