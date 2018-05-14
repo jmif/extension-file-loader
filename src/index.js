@@ -79,7 +79,7 @@ export default function loader(content) {
     this.emitFile(outputPath, content);
   }
   // TODO revert to ES2015 Module export, when new CSS Pipeline is in place
-  return `module.exports = (window.browser && window.browser.extension) ? window.browser.extension.getURL('${publicPath}') : '${publicPath}'`;
+  return `module.exports = global.window && global.window.browser && global.window.browser.extension) ? global.window.browser.extension.getURL('${publicPath}') : '${publicPath}'`;
 }
 
 export const raw = true;
